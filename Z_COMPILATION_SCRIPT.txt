@@ -1,0 +1,22 @@
+----the following script is relative to glfw 3.4 version , glew 2.1.0 version, gli 0.8.2.0 version, glm 0.9.9.7---- 
+----note that gli, glm, is written in c++11, so the [4] includes the c++11 specification, 
+
+[1] gcc -I include -L lib-mingw-w64 -o main main.c -lglfw3 -lopengl32 -lgdi32
+
+[2] gcc -I include -L lib-mingw-w64 -Llib-glew -o main main.c -lglfw3 -lglew32 -lopengl32 -lgdi32
+
+[3] g++ -I include -L lib-mingw-w64 -Llib-glew -o main main.cpp -lglfw3 -lglew32 -lopengl32 -lgdi32
+
+[4] g++ -I include -L lib-mingw-w64 -Llib-glew -o main main.cpp -lglfw3 -lglew32 -lopengl32 -lgdi32 -std=c++11
+
+g++ -I include -L lib-mingw-w64 -L lib-glew -o main main.cpp -lglfw3 -lglew32s -lopengl32 -lgdi32 -std=c++11
+
+bool loadShaders(GLuint &program){
+    char infoLog[512];
+    GLint success;
+
+    std::string temp = "";
+    std::string src = "";
+    std::ifstream in_file;
+    
+}
