@@ -10,13 +10,3 @@
 [4] g++ -I include -L lib-mingw-w64 -Llib-glew -o main main.cpp -lglfw3 -lglew32 -lopengl32 -lgdi32 -std=c++11
 
 g++ -I include -L lib-mingw-w64 -L lib-glew -o main main.cpp -lglfw3 -lglew32s -lopengl32 -lgdi32 -std=c++11
-
-bool loadShaders(GLuint &program){
-    char infoLog[512];
-    GLint success;
-
-    std::string temp = "";
-    std::string src = "";
-    std::ifstream in_file;
-    
-}
